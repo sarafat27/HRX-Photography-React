@@ -11,45 +11,48 @@ const Banner = () => {
     };
 
     return (
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item>
-                <img style={{ height: '500px' }}
-                    className="d-block w-100"
-                    src={pic1}
-                    alt="First slide"
-                />
-                <Carousel.Caption>
-                    <h3>HRX Photography</h3>
-                    <p>This is one of the leading photography in bangladesh</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img style={{ height: '500px' }}
-                    className="d-block w-100"
-                    src={pic2}
-                    alt="Second slide"
-                />
+        <>
+            <h1 className='text-success my-3'>HRX photography</h1>
+            <Carousel activeIndex={index} onSelect={handleSelect}>
+                <Carousel.Item>
+                    <img style={{ height: '500px' }}
+                        className="d-block w-100"
+                        src={pic1}
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <h3>HRX Photography</h3>
+                        <p>This is one of the leading photography in bangladesh</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img style={{ height: '500px' }}
+                        className="d-block w-100"
+                        src={pic2}
+                        alt="Second slide"
+                    />
 
-                <Carousel.Caption>
-                    <h3>HRX Photography</h3>
-                    <p>This is one of the leading photography in bangladesh</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img style={{ height: '500px' }}
-                    className="d-block w-100"
-                    src={pic3}
-                    alt="Third slide"
-                />
+                    <Carousel.Caption>
+                        <h3>HRX Photography</h3>
+                        <p>This is one of the leading photography in bangladesh</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img style={{ height: '500px' }}
+                        className="d-block w-100"
+                        src={pic3}
+                        alt="Third slide"
+                    />
 
-                <Carousel.Caption>
-                    <h3>HRX Photography</h3>
-                    <p>
-                        This is one of the leading photography in bangladesh
-                    </p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+                    <Carousel.Caption>
+                        <h3>HRX Photography</h3>
+                        <p>
+                            This is one of the leading photography in bangladesh
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+        </>
     );
 };
 
