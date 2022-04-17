@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Diamond",
+        "id": 1,
+        "price": 70000,
+        "img": "https://images.unsplash.com/photo-1556103255-4443dbae8e5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGhvdG9ncmFwaGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+        "description": "There will be four photographers in your service.You will get unlimited click.In this package there wil be one special photographer for cinematography.A special album of 200 pages will be given to you."
+    },
+    {
+        "name": "Gold",
+        "id": 2,
+        "price": 40000,
+        "img": "https://images.unsplash.com/photo-1590071089561-2087ff1fc418?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBob3RvZ3JhcGh5fGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+        "description": "There will be three photographers in your service.You will get maximum 600 clicks.In this package there wil be one special photographer for cinematography.A special album of 100 pages will be given to you."
+    },
+    {
+        "name": "Silver",
+        "id": 3,
+        "price": 20000,
+        "img": "https://images.unsplash.com/photo-1595452588429-b52ca8701283?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHBob3RvZ3JhcGh5fGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+        "description": "There will be two photographers in your service.You will get maximum 400 click.In this package there wil be no photographer for cinematography.A special album of 80 pages will be given to you."
+    }
+]

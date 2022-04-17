@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import Banner from '../Banner/Banner';
-import logo from '../../../images/navbarLogo/logo.jpg'
+import logo from "../../../images/navbarLogo/logo.jpg"
+
 const Header = () => {
     return (
         <div>
@@ -22,7 +22,7 @@ const Header = () => {
                 </Navbar>
             </div>
             <h1 className='text-success my-3'>HRX Photography</h1>
-            <Banner></Banner>
+
         </div>
     );
 };
