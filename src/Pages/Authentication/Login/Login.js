@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import FacebookLogin from '../FacebookLogin/FacebookLogin';
+
 
 const Login = () => {
     return (
@@ -20,6 +22,7 @@ const Login = () => {
                 </Button>
                 <p className='my-3'>New to This website? <Link className='text-decoration-none' to='/register'>please register</Link></p>
             </Form>
+            <FacebookLogin></FacebookLogin>
         </div>
     );
 };
