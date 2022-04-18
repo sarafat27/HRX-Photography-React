@@ -11,7 +11,7 @@ import pic8 from '../../../images/album/pic8.jpg'
 import pic9 from '../../../images/album/pic9.jpg'
 const Album = () => {
     return (
-        <div>
+        <div id='album'>
             <h2 className='my-5 text-success'>Our previous works</h2>
             <div className='album container'>
                 <img className='mx-auto' src={pic1} alt="" />

@@ -1,6 +1,21 @@
-# Getting Started with Create React App
+# HRX Photography
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Functionality
+* In home page,there is a navbar,a slider,previous works,services and a footer.
+* In about page ,i have given a short description about me.
+* If anyone want to book a service without logging in,he will be redirect to login page.If he has no account ,he have to register from sign up page.
+* If user has account ,he can login from login page.
+* User can sign out by clicking sign out button in navbar.
+
+# Technologies used:
+* React router
+* React bootstrap
+* Firebase
+* React firebase hooks
+* Toast
+
 
 ## Available Scripts
 
