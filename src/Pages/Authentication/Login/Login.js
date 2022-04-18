@@ -2,10 +2,11 @@ import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import FacebookLogin from '../FacebookLogin/FacebookLogin';
 import Loading from '../../Shared/Loading/Loading';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -21,7 +22,11 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    if (loading) {
+    const [sendPasswordResetEmail, sending, error2] = useSendPasswordResetEmail(
+        auth
+    );
+
+    if (loading || sending) {
         return <Loading></Loading>
     }
 
@@ -36,8 +41,18 @@ const Login = () => {
     }
 
     let errorElement;
-    if (error) {
-        errorElement = <p className='text-danger'>{error?.message}</p>
+    if (error || error2) {
+        errorElement = <p className='text-danger'>{error?.message} {error2?.message}</p>
+    }
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
+        if (email) {
+            await sendPasswordResetEmail(email)
+            toast('email sent')
+        }
+        else {
+            toast('please give an email address')
+        }
     }
     return (
         <div className='w-25 mx-auto'>
@@ -55,7 +70,11 @@ const Login = () => {
                 </Button>
                 <p className='my-3'>New to This website? <Link className='text-decoration-none' to='/register'>please register</Link></p>
             </Form>
+            <p>Forget password? <button onClick={resetPassword} className='btn btn-link text-decoration-none text-success'>
+                Reset password
+            </button></p>
             <FacebookLogin></FacebookLogin>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
