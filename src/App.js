@@ -24,7 +24,7 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
-        <Route path='/booking' element={<RequireAuth>
+        <Route path='/booking/:serviceId' element={<RequireAuth>
           <Booking></Booking>
         </RequireAuth>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

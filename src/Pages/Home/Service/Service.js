@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Service = ({ service }) => {
-    const { name, price, img, description } = service;
+    const { name, price, img, description, id } = service;
     const navigate = useNavigate();
 
     const goToBooking = () => {
-        navigate('/booking')
+        navigate(`/booking/${id}`)
     }
     return (
         <div className='col-lg-4'>
