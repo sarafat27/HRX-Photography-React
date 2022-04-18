@@ -1,6 +1,6 @@
 # HRX Photography
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My project live link [Click here](https://hrx-photography.web.app/).
 
 # Functionality
 * In home page,there is a navbar,a slider,previous works,services and a footer.
